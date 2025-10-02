@@ -19,8 +19,9 @@ def parse_csv(file_path):
 def get_columns(data):
     return data.columns.tolist()
 
-def perform_regression(data, formula):
-    # Fit a linear regression model using statsmodels
-    model = smf.ols(formula=formula, data=data).fit()
-    return model
+def example_perform_regression(file_path):
+    data = pd.read_csv(file_path)
+    cols = get_columns(data)
+    df = data[cols]
+    return df
 
