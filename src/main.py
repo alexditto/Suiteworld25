@@ -10,10 +10,10 @@ load_dotenv()
 config = Config(
     account=os.getenv("NETSUITE_ACCOUNT"),
     auth=TokenAuth(
-        consumer_key=os.getenv("NETSUITE_CONSUMER_KEY_QL"),
-        consumer_secret=os.getenv("NETSUITE_CONSUMER_SECRET_QL"),
-        token_id=os.getenv("NETSUITE_TOKEN_QL"),
-        token_secret=os.getenv("NETSUITE_TOKEN_SECRET_QL"),
+        consumer_key=os.getenv("NETSUITE_CONSUMER_KEY"),
+        consumer_secret=os.getenv("NETSUITE_CONSUMER_SECRET"),
+        token_id=os.getenv("NETSUITE_TOKEN"),
+        token_secret=os.getenv("NETSUITE_TOKEN_SECRET"),
     )
 )
 ns = NetSuite(config)
@@ -29,8 +29,9 @@ async def async_main():
 
 if __name__ == "__main__":
     csv = data_parser.parse_csv("csv/train_inflows(in).csv")
+    print(csv.head())
     print(data_parser.get_columns(csv))
-    data_parser.preprocess_data(csv, )
+    # data_parser.preprocess_data(csv, "csv/processed_train_inflows(in).csv")
     # asyncio.run(async_main())
 
 
