@@ -23,3 +23,4 @@ def perform_regression(data, formula):
     # Fit a linear regression model using statsmodels
     model = smf.ols(formula=formula, data=data).fit()
     return model
+

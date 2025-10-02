@@ -19,8 +19,8 @@ async def async_main():
     restlet_results = await ns.restlet.post(2130, deploy=1, data={"internalId": 280375})
     print(restlet_results)
 
-async def async_restlet_get(customer_ids: list):
-    restlet_results = await ns.restlet.get(2130, deploy=1, params={"internal_ids": customer_ids})
+async def async_restlet_get(search_id: str):
+    restlet_results = await ns.restlet.get(2130, deploy=1, params={"search": search_id})
     print(restlet_results)
 
 async def async_restlet_post(customer_ids: list):
