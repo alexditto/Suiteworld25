@@ -29,5 +29,4 @@ async def async_restlet_post(customer_ids: list):
 
 async def get_customer(customer_id: int):
     customer = await ns.rest_api.get("/record/v1/customer/" + str(customer_id))
-
     print(customer)
