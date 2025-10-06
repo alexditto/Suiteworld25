@@ -1,0 +1,11 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "__tests__/",
+  },
+  "exclude": [
+    "node_modules",
+    "Tive",
+    "./jest.config.ts",
+  ],
+}

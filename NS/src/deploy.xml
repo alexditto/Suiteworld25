@@ -1,0 +1,11 @@
+<deploy>
+    <files>
+        <path>~/FileCabinet/SuiteApps/netsuite.com.td3045089/*</path>
+    </files>
+    <objects>
+        <path>~/Objects/*</path>
+    </objects>
+    <translationimports>
+        <path>~/Translations/*</path>
+    </translationimports>
+</deploy>

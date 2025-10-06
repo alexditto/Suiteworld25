@@ -1,0 +1,7 @@
+<manifest projecttype="SUITEAPP">
+  <publisherid>netsuite.com</publisherid>
+  <projectid>td3045089</projectid>
+  <projectname>T5</projectname>
+  <projectversion>1.0.0</projectversion>
+  <frameworkversion>1.0</frameworkversion>
+</manifest>

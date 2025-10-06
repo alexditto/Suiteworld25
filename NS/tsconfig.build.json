@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./src/FileCabinet/SuiteScripts",
+  },
+  "exclude": [
+    "node_modules",
+    "Tests",
+    "__tests__",
+    "./jest.config.ts"
+  ]
+}
